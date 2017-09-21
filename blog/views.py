@@ -2,7 +2,6 @@ from django.shortcuts import render, get_object_or_404
 from .models import Post
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic import ListView
-<<<<<<< HEAD
 from .forms import EmailPostForm, CommentForm
 from django.core.mail import send_mail
 
@@ -12,9 +11,6 @@ class PostListView(ListView):
     context_object_name = 'posts'
     paginate_by = 3
     template_name = 'blog/post/list.html'
-=======
-# Create your views here.
->>>>>>> c9231cd9ad7e232bd29575b8bba980f8bbe7726d
 
 
 class PostListView(ListView):
